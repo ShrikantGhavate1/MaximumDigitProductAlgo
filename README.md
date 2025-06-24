@@ -19,9 +19,9 @@
 ## Project Structure:
   DigitProduct/----> Application logic
 └── Program.cs
-└── MaxProduct.cs ----> >alogirthm
+└── MaximumProduct.cs ----> >alogirthm
 
 DigitProduct.Tests/ ----> Unit tests using xUnit
-└── MaxProductTests.cs
+└── MaximumProductTests.cs
 
 README.txt -> This file
