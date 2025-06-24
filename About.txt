@@ -1,0 +1,21 @@
+The algorithm uses a sliding window approach:
+
+- About algorithm and code:
+1) It reads k digits at a time and calculates the product.
+2) If the window contains a 0, it skips it for efficiency.
+3) Handles invalid cases properly by returning long.MinValue and printing error messages.
+
+- About Time Complexity: 
+1)Normal sliding window where we use the window of size k and recalculate the product of current window when we encounter the zero will have time complexity of O(N *K) in worst case. (When there are all zeroes).
+
+2)But this optimised approach has following:
+    a) Maintain the zeroCount variable to count the number of zeroes in current window of size k.
+    b) Calculate the product for the window of size k first.
+    c) Update product only when zeroCount variable is 0.
+    d) This counter variable is recalculate when we move/slide the window & recalculate the product only when the left or right boundary is non zero.
+    e) Update the maxProduct only when zeroCount is 0.
+
+3) Time Complexity of this improved algorithm O(n)
+
+- About Space Complexity:
+We are using array to store the digits. O(n)
