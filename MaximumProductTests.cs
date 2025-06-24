@@ -3,7 +3,7 @@ using DigitsProduct; // Make sure the namespace matches your main project
 
 namespace DigitProduct.Tests
 {
-    public class MaxProductTests
+    public class MaximumProductTests
     {
         [Fact]
         public void Check_Result_For_Normal_Input()
